@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 6 - Componentes en React con JSX</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffdfc;
+      margin: 0;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #9333ea;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #7c3aed;
+      border-left: 5px solid #c4b5fd;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .code-block {
+      background-color: #1e293b;
+      color: #f8fafc;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      overflow-x: auto;
+      margin-top: 15px;
+    }
+
+    .lab {
+      background-color: #f3e8ff;
+      border-left: 6px solid #9333ea;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    .github-link {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .github-link a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #9333ea;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .github-link a:hover {
+      background-color: #7e22ce;
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 6: Componentes en React con JSX</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>🧩 ¿Qué es JSX?</h2>
+      <p>JSX (JavaScript XML) es una sintaxis que permite escribir HTML dentro de JavaScript. Es una forma más legible y eficiente de crear elementos React sin usar <code>React.createElement()</code>.</p>
+      <ul>
+        <li>Permite combinar lógica y presentación en componentes.</li>
+        <li>Puede incluir expresiones JavaScript entre <code>{ }</code>.</li>
+        <li>Compilado por Babel a JavaScript puro.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧱 Componentes en React</h2>
+      <p>React permite dividir la interfaz en componentes reutilizables y escalables. Se pueden construir como funciones o clases (aunque actualmente se prefiere la versión funcional).</p>
+      <ul>
+        <li>Componentes funcionales con hooks.</li>
+        <li>Uso de props para pasar información.</li>
+        <li>Modularidad y reutilización de UI.</li>
+      </ul>
+    </section>
+
+    <section class="lab">
+      <h2>🧪 Práctica 3: Lista de Usuarios</h2>
+      <p>En esta práctica se creó un componente llamado <code>ListaUsuarios</code> que recibe un array de objetos y los renderiza dinámicamente usando JSX.</p>
+
+      <div class="code-block">
+<pre><code>// ListaUsuarios.jsx
+import React from 'react';
+
+function ListaUsuarios(props) {
+  return (
+    &lt;div&gt;
+      &lt;h3&gt;Usuarios Registrados&lt;/h3&gt;
+      &lt;ul&gt;
+        {props.usuarios.map((u, i) =&gt; (
+          &lt;li key=&#123;i&#125;&gt;&#123;u.nombre&#125; - &#123;u.email&#125;&lt;/li&gt;
+        ))}
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default ListaUsuarios;
+</code></pre>
+      </div>
+
+      <p>Se utilizó el componente con datos simulados como:</p>
+
+      <div class="code-block">
+<pre><code>const usuarios = [
+  &#123; nombre: "Ana", email: "ana@mail.com" &#125;,
+  &#123; nombre: "Luis", email: "luis@mail.com" &#125;
+];
+</code></pre>
+      </div>
+
+    </section>
+
+    <section class="github-link">
+      <a href="https://github.com/kaeldras/PRACTICA-3" target="_blank">
+        🔗 Ver código en GitHub
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 | Semana 6 - Componentes y JSX
+  </footer>
+
+</body>
+</html>
+

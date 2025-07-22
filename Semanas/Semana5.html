@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 5 - Introducción a React</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #10b981;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0f766e;
+      border-left: 5px solid #34d399;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .code-block {
+      background-color: #1e293b;
+      color: #f8fafc;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      overflow-x: auto;
+      margin-top: 15px;
+    }
+
+    .lab {
+      background-color: #ecfccb;
+      border-left: 6px solid #65a30d;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 5: Introducción a React</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>⚛️ ¿Qué es React?</h2>
+      <p>React es una biblioteca de JavaScript desarrollada por Meta (Facebook) que permite crear interfaces de usuario interactivas y basadas en componentes reutilizables. Se basa en el principio de unidireccionalidad de datos y el uso eficiente del Virtual DOM.</p>
+      <ul>
+        <li>Creación de componentes reutilizables.</li>
+        <li>Rendimiento optimizado mediante Virtual DOM.</li>
+        <li>Desarrollo basado en funciones puras y hooks.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧱 Fundamentos de React</h2>
+      <ul>
+        <li>JSX: Sintaxis que combina HTML con JavaScript.</li>
+        <li>Props y State: Mecanismos para enviar e interactuar con datos.</li>
+        <li>Componentes Funcionales y de Clase.</li>
+        <li>Hooks: <code>useState</code>, <code>useEffect</code>, entre otros.</li>
+      </ul>
+    </section>
+
+    <section class="lab">
+      <h2>🧪 Laboratorio 05A: Contador en React</h2>
+      <p>En este laboratorio se desarrolló una aplicación de contador utilizando <strong>React + Hooks</strong>.</p>
+
+      <div class="code-block">
+<pre><code>// App.jsx
+import React, { useState } from 'react';
+
+function Contador() {
+  const [contador, setContador] = useState(0);
+
+  return (
+    &lt;div style=&#123;&#123;textAlign: 'center'&#125;&#125;&gt;
+      &lt;h2&gt;Contador: &#123;contador&#125;&lt;/h2&gt;
+      &lt;button onClick=&#123;() =&gt; setContador(contador + 1)&#125;&gt;Incrementar&lt;/button&gt;
+      &lt;button onClick=&#123;() =&gt; setContador(0)&#125;&gt;Reiniciar&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default Contador;
+</code></pre>
+      </div>
+
+      <p>El componente <code>Contador</code> utiliza el hook <code>useState</code> para manejar el estado del número actual. Cada vez que se hace clic en "Incrementar", el contador aumenta. El botón "Reiniciar" lo devuelve a cero.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 | Semana 5 - React y Componentes
+  </footer>
+
+</body>
+</html>

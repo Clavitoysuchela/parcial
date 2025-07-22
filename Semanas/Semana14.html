@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 15 - Aplicación Web Flask</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #c6ffdd, #fbd786, #f7797d);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid rgba(255,255,255,0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #222;
+      border-bottom: 3px solid #ff6f61;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .glass-card h3 {
+      margin-top: 0;
+      color: #444;
+    }
+
+    .tech-stack {
+      margin-top: 40px;
+    }
+
+    .tech-stack h4 {
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .tech-list {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tech-list li {
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-weight: 500;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff6f61;
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      margin: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e95c4b;
+    }
+
+    @media (max-width: 600px) {
+      .tech-list {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 14: Aplicación Web Flask – Registro de Estudiantes</h1>
+  </header>
+
+  <main>
+    <h2 class="section-title">Resumen del Proyecto</h2>
+    <p class="description">
+      En esta semana se desarrolló una <strong>aplicación web con Flask</strong>, un microframework de Python, para el <strong>registro y gestión de estudiantes</strong>. Se aplicaron rutas limpias, integración con SQLite/MySQL, validaciones de formularios y plantillas HTML con Jinja2.
+    </p>
+
+    <div class="glass-card">
+      <h3>📄 Formularios y Rutas</h3>
+      <p>Se implementaron formularios de ingreso con Flask-WTF y rutas POST/GET para registrar y actualizar información de estudiantes.</p>
+    </div>
+
+    <div class="glass-card">
+      <h3>💾 Base de Datos</h3>
+      <p>La información fue almacenada en SQLite (modo local) y MySQL (modo producción), usando SQLAlchemy como ORM.</p>
+    </div>
+
+    <div class="glass-card">
+      <h3>🧪 Validación y Plantillas</h3>
+      <p>Validaciones de datos desde el backend y uso del motor de plantillas Jinja2 para renderizar formularios y mensajes.</p>
+    </div>
+
+    <div class="tech-stack">
+      <h4>🛠️ Tecnologías y Herramientas:</h4>
+      <ul class="tech-list">
+        <li>Flask</li>
+        <li>Python 3</li>
+        <li>SQLite / MySQL</li>
+        <li>Jinja2</li>
+        <li>Flask-WTF</li>
+        <li>SQLAlchemy</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div>
+
+    <div class="buttons">
+      <a href="https://github.com/LeninBL/Aplicacion-Web-Flask-Registro-de-Estudiantes" target="_blank" class="btn">🔗 Ver en GitHub</a>
+    </div>
+  </main>
+
+</body>
+</html>
+

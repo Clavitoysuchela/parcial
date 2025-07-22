@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana 10 - API RESTful para Gestión de Docentes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2b5876);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f3a;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #00ffd5;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00ffd5;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .description {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .feature-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #00ffd5;
+    }
+    .feature-card h3 {
+      margin-top: 0;
+      color: #00ffd5;
+    }
+    .tech-stack {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .tech-stack h4 {
+      margin-top: 0;
+      color: #ff8a00;
+    }
+    .tech-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .tech-list li {
+      padding: 5px 0;
+    }
+    .buttons {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .btn {
+      background: #00ffd5;
+      color: #000;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background: #00c9aa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 10: API RESTful para Gestión de Docentes</h1>
+  </header>
+
+  <main>
+    <h2 class="section-title">Resumen del Proyecto</h2>
+    <p class="description">
+      Esta semana se desarrolló una <strong>API RESTful completa para la gestión de docentes</strong> utilizando principios de arquitectura REST, permitiendo realizar operaciones CRUD (crear, leer, actualizar y eliminar) sobre los datos de los profesores. El backend se implementó en Spring Boot con conexión a una base de datos relacional.
+    </p>
+
+    <div class="features">
+      <div class="feature-card">
+        <h3>📌 Endpoints CRUD</h3>
+        <p>Rutas organizadas por controladores REST que permiten listar, registrar y editar docentes.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🛠️ Validaciones</h3>
+        <p>Uso de anotaciones de validación con Bean Validation (javax.validation).</p>
+      </div>
+      <div class="feature-card">
+        <h3>🔒 Seguridad</h3>
+        <p>Diseñado para integrarse fácilmente con Spring Security en futuras versiones.</p>
+      </div>
+    </div>
+
+    <div class="tech-stack">
+      <h4>Tecnologías y Herramientas Utilizadas</h4>
+      <ul class="tech-list">
+        <li>🌐 Spring Boot</li>
+        <li>🗄️ MySQL</li>
+        <li>📦 Maven</li>
+        <li>📨 Postman</li>
+        <li>📁 JPA (Hibernate)</li>
+      </ul>
+    </div>
+
+    <div class="buttons">
+      <a href="https://github.com/LeninBL/API-RESTful-para-Gesti-n-de-Docentes" target="_blank" class="btn">🔗 Ver en GitHub</a>
+
+    </div>
+  </main>
+
+</body>
+</html>
+

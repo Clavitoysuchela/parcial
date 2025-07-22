@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 8 - Evaluación Parcial</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8fafc;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      line-height: 1.4;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2563eb;
+      border-left: 5px solid #93c5fd;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    .info-box {
+      background-color: #f1f5f9;
+      padding: 15px 20px;
+      border-left: 6px solid #3b82f6;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background-color: #2563eb;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      text-align: center;
+    }
+
+    .download-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    .code {
+      background: #f0f0f0;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>UNIVERSIDAD NACIONAL DEL CENTRO DEL PERÚ<br>
+    Facultad de Ingeniería de Sistemas</h1>
+  </header>
+
+  <main>
+    <h2>📄 Evaluación Parcial – Semana 8</h2>
+
+    <div class="info-box">
+      <p><strong>Curso:</strong> Desarrollo de Aplicaciones Web</p>
+      <p><strong>Semestre:</strong> IX</p>
+      <p><strong>Fecha:</strong> _______________________</p>
+      <p><strong>Apellidos y Nombres:</strong> ____________________________________________</p>
+    </div>
+
+    <h2>📝 Instrucciones</h2>
+    <p>
+      Desarrolle el presente examen utilizando <strong>React</strong> y <strong>Vite</strong>. La duración es de 60 minutos. 
+      La presentación del trabajo es bajo la modalidad de <strong>programación por pares</strong>.
+    </p>
+
+    <h2>🧩 Pregunta 1</h2>
+    <p>
+      Desarrollar una aplicación en React y Vite con al menos 3 componentes: 
+      <span class="code">ComponentGeneral</span>, <span class="code">ListaEstudiantes</span> y 
+      <span class="code">Estudiante</span>.
+    </p>
+    <ul>
+      <li>En <span class="code">ComponentGeneral</span>, leer datos de un archivo <span class="code">estudiantes.json</span> con 20 estudiantes (id, university, name, birthdate, address, barcode).</li>
+      <li>En <span class="code">ListaEstudiantes</span>, mostrar todos los componentes hijos (<span class="code">Estudiante</span>) en <strong>dos columnas</strong> si la pantalla es <code>md</code> o mayor, y en una sola columna si es menor.</li>
+      <li>En <span class="code">Estudiante</span>, mostrar un <strong>card</strong> con nombre, dirección, universidad, fecha de nacimiento y <strong>código de barras</strong> (formato: 10 dígitos separados por 2 guiones).</li>
+      <li>Usar <strong>CSS puro</strong> para el diseño.</li>
+    </ul>
+
+    <h2>⏱️ Pregunta 2</h2>
+    <p>
+      Desarrollar una aplicación en React y Vite que contenga un <strong>cronómetro</strong> con varios componentes. El tiempo se establece mediante 3 inputs numéricos: horas, minutos y segundos.
+    </p>
+    <ul>
+      <li>Al pulsar el botón "Iniciar", los inputs se transforman en <strong>labels</strong> que muestran el tiempo restante.</li>
+      <li>El DOM debe actualizarse en <strong>tiempo real cada segundo</strong>.</li>
+      <li>Cuando el cronómetro llegue a cero, debe emitir un sonido en bucle con el archivo <code>BeepExamen.mp3</code>.</li>
+      <li>Usar <strong>CSS puro</strong> para el diseño visual.</li>
+    </ul>
+
+    <div style="text-align: center;">
+      <a href="Proyectodeparciales/parcial.zip" download class="download-btn">
+        📦 Descargar Proyecto Parcial (.zip)
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+    Mg. Ing. Jaime Suasnábar Terrel | Curso: Desarrollo de Aplicaciones Web
+  </footer>
+
+</body>
+</html>
+
+

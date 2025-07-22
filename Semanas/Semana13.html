@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 14 - Laravel: Registro de Estudiantes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fc;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #2f80ed;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .section-title {
+      font-size: 24px;
+      color: #2f80ed;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background-color: #f0f4ff;
+      border-left: 4px solid #2f80ed;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .feature-card h3 {
+      margin-top: 0;
+      color: #2f80ed;
+    }
+    .tech-stack {
+      margin-top: 40px;
+    }
+    .tech-stack h4 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .tech-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .tech-list li {
+      background: #e8f0fe;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #2f80ed;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      margin: 10px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #1c60c2;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 13: Aplicación Web PHP con Laravel – Registro de Estudiantes</h1>
+  </header>
+
+  <main>
+    <h2 class="section-title">Descripción del Proyecto</h2>
+    <p class="description">
+      Esta semana desarrollamos una <strong>aplicación web utilizando Laravel</strong>, un framework PHP moderno y eficiente. El sistema se centró en permitir el <strong>registro, edición y gestión de estudiantes</strong> en una base de datos estructurada, aplicando el patrón MVC, migraciones, validaciones y rutas seguras.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>📄 Formularios Dinámicos</h3>
+        <p>Se implementaron formularios interactivos para registrar y editar estudiantes usando Blade.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🧠 Validación y Seguridad</h3>
+        <p>Validaciones robustas del lado del servidor, protección CSRF y rutas seguras mediante middleware.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📂 Base de Datos</h3>
+        <p>Modelo relacional creado con migraciones para estudiantes y sus atributos clave.</p>
+      </div>
+    </div>
+
+    <div class="tech-stack">
+      <h4>🛠️ Tecnologías Utilizadas:</h4>
+      <ul class="tech-list">
+        <li>Laravel 10</li>
+        <li>PHP 8+</li>
+        <li>Blade Templates</li>
+        <li>MySQL</li>
+        <li>Laravel Migrations y Seeders</li>
+      </ul>
+    </div>
+
+    <div class="buttons">
+      <a href="https://github.com/LeninBL/Aplicacion-Web-PHP-con-Laravel-Registro-de-Estudiantes" target="_blank" class="btn">🔗 Ver en GitHub</a>
+    </div>
+  </main>
+
+</body>
+</html>

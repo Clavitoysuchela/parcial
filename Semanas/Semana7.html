@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 7 - Eventos y Consumo de APIs en Framework JS</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      color: #1e293b;
+    }
+
+    header {
+      background-color: #0f172a;
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.3rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0284c7;
+      border-bottom: 2px solid #bae6fd;
+      padding-bottom: 6px;
+      margin-top: 40px;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .highlight {
+      background-color: #ecfdf5;
+      border-left: 6px solid #34d399;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .code-block {
+      background-color: #0f172a;
+      color: #f8fafc;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: monospace;
+      overflow-x: auto;
+      margin: 15px 0;
+    }
+
+    .github-link {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .github-link a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0284c7;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .github-link a:hover {
+      background-color: #0369a1;
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 7: Eventos, Condicionales, Bucles y Consumo de APIs</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>🎯 Introducción</h2>
+      <p>Esta semana nos centramos en el desarrollo de aplicaciones dinámicas utilizando un framework JS moderno como <strong>React</strong>, <strong>Vue</strong> o <strong>Angular</strong>. Se trabajó el manejo de eventos, renderizado condicional y repetitivo, consumo de APIs externas y el uso de promesas y async/await para manejar datos asíncronos.</p>
+    </section>
+
+    <section>
+      <h2>🖱️ Eventos en el Navegador</h2>
+      <p>Los eventos permiten que los usuarios interactúen con la aplicación. En React, por ejemplo, se manejan con sintaxis como <code>onClick</code>, <code>onChange</code>, etc.</p>
+
+      <div class="code-block">
+// Ejemplo simple en React
+&lt;button onClick={() =&gt; alert('¡Evento capturado!')}&gt;
+  Clic aquí
+&lt;/button&gt;
+      </div>
+    </section>
+
+    <section>
+      <h2>🔁 Renderizado Condicional e Iterativo</h2>
+      <p>Permite mostrar u ocultar elementos en base a condiciones lógicas, o repetir bloques de código para mostrar listas o resultados múltiples.</p>
+
+      <div class="code-block">
+// Condicional con operador ternario
+{usuarioAutenticado ? &lt;Dashboard /&gt; : &lt;Login /&gt;}
+
+// Iteración con map()
+{usuarios.map(user =&gt; &lt;li key={user.id}&gt;{user.nombre}&lt;/li&gt;)}
+      </div>
+    </section>
+
+    <section>
+      <h2>📥 Consumo de APIs y uso de Axios</h2>
+      <p>Usamos <strong>Axios</strong> y <strong>Fetch</strong> para hacer peticiones HTTP a APIs. También aprendimos a usar <code>async/await</code> y manejar promesas con <code>.then()</code>.</p>
+
+      <div class="highlight">
+        <strong>Ventajas de Axios:</strong>
+        <ul>
+          <li>Sintaxis más limpia.</li>
+          <li>Soporte automático para JSON.</li>
+          <li>Manejo centralizado de errores.</li>
+        </ul>
+      </div>
+
+      <div class="code-block">
+// Petición con async/await y axios
+import axios from 'axios';
+
+const obtenerDatos = async () =&gt; {
+  try {
+    const respuesta = await axios.get('https://api.example.com/usuarios');
+    console.log(respuesta.data);
+  } catch (error) {
+    console.error('Error al obtener datos:', error);
+  }
+};
+      </div>
+    </section>
+
+    <section>
+      <h2>🧪 Laboratorio 06A</h2>
+      <p>Se creó una aplicación que:</p>
+      <ul>
+        <li>Muestra una lista de usuarios obtenida desde una API externa.</li>
+        <li>Utiliza eventos para filtrar o eliminar elementos.</li>
+        <li>Aplica renderizado condicional cuando no hay datos disponibles.</li>
+        <li>Utiliza bucles para construir dinámicamente una tabla de resultados.</li>
+      </ul>
+    </section>
+
+
+
+  </main>
+
+  <footer>
+    © 2025 | Semana 7 - Eventos y APIs con Framework JS
+  </footer>
+
+</body>
+</html>

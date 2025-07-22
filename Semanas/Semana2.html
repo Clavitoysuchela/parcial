@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 2 - HTML, XML y CSS3</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #1e293b;
+      --bg: #f9fafb;
+      --highlight: #0ea5e9;
+      --border: #e5e7eb;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      margin: 0;
+      color: var(--secondary);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      border-left: 4px solid var(--highlight);
+      padding-left: 12px;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .box {
+      background-color: #f1f5f9;
+      border-left: 5px solid var(--highlight);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .highlight {
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 2: HTML, XML y Diseño Web con CSS3</h1>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <h2>🌐 Fundamentos: HTML y XML</h2>
+      <p>Se trabajó con lenguajes de marcado esenciales para la web:</p>
+      <ul>
+        <li><span class="highlight">HTML5:</span> Estructura de páginas web, etiquetas semánticas, elementos de contenido.</li>
+        <li><span class="highlight">XML:</span> Lenguaje extensible utilizado para estructurar y transportar datos.</li>
+        <li>Comprensión del <strong>DOM (Document Object Model)</strong>: árbol de nodos, renderizado y ciclo de vida de la página.</li>
+        <li>Estándar <span class="highlight">Open Web Platform</span>: tecnologías abiertas compatibles entre navegadores.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>📈 Optimización Web y Compatibilidad</h2>
+      <p>Se explicaron conceptos clave para mejorar la experiencia de usuario y la visibilidad:</p>
+      <ul>
+        <li>Optimización SEO: uso correcto de títulos, metadatos, etiquetas ALT y estructura semántica.</li>
+        <li>Compatibilidad entre navegadores: uso de estándares para asegurar comportamiento consistente.</li>
+        <li>Buenas prácticas para mejorar la velocidad de carga y accesibilidad.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>🎨 Diseño Web con CSS3</h2>
+      <p>Introducción y aplicación de diseño visual mediante Hojas de Estilo en Cascada (CSS):</p>
+      <div class="box">
+        <ul>
+          <li>Sintaxis CSS: selectores, propiedades, valores.</li>
+          <li>Display: <code>block</code>, <code>inline</code>, <code>inline-block</code>.</li>
+          <li>Unidades: <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>.</li>
+          <li>Diseño con <strong>Flexbox</strong> y <strong>Grid Layout</strong>.</li>
+          <li>Tipos de <code>position</code>: static, relative, absolute, fixed.</li>
+          <li>Diseño fluido vs. diseño responsivo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🧪 Laboratorio 02A</h2>
+      <p>El laboratorio práctico consistió en:</p>
+      <ul>
+        <li>Construcción de una página web HTML con estructura semántica.</li>
+        <li>Aplicación de estilos mediante Flexbox para diseño adaptativo.</li>
+        <li>Creación de un diseño fluido y responsivo que se adapta a diferentes tamaños de pantalla.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 | Semana 2 - HTML, XML y CSS3
+  </footer>
+
+</body>
+</html>

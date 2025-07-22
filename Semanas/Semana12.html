@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 12 - Backend Django</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #111827;
+      color: #e5e7eb;
+    }
+
+    header {
+      background-color: #1f2937;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #3b82f6;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #1e293b;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      color: #60a5fa;
+      margin-bottom: 10px;
+      border-left: 4px solid #3b82f6;
+      padding-left: 10px;
+    }
+
+    .section p {
+      line-height: 1.8;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      color: #fbbf24;
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: #0f172a;
+      border-left: 5px solid #3b82f6;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: #93c5fd;
+      margin-top: 0;
+    }
+
+    .lab {
+      background-color: #1e40af;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .lab h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 12: Gestión de Formularios, Admin, Middleware y Sesiones</h1>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <h2>📋 Gestión de Formularios en Django</h2>
+      <div class="card">
+        <h3>Creación y Uso</h3>
+        <p>Se aprendió a crear formularios utilizando clases de Django, tanto con <span class="highlight">Form</span> como con <span class="highlight">ModelForm</span>.</p>
+        <ul>
+          <li>Diseño de formularios con campos personalizados.</li>
+          <li>Uso de plantillas para mostrar y estilizar formularios.</li>
+          <li>Aplicación de validaciones personalizadas.</li>
+          <li>Sanitización de datos antes de ser procesados.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🛠️ Django Admin</h2>
+      <div class="card">
+        <h3>Introducción y Personalización</h3>
+        <p>Se utilizó el panel de administración de Django para facilitar la gestión de modelos.</p>
+        <ul>
+          <li>Registro de modelos en <code>admin.py</code>.</li>
+          <li>Configuración de listas, búsquedas y filtros.</li>
+          <li>Creación de campos calculados para mostrar información dinámica.</li>
+          <li>Formularios personalizados desde el admin.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🔐 Middleware y Sesiones</h2>
+      <div class="card">
+        <h3>Gestión de Sesiones</h3>
+        <p>Se exploró el ciclo de vida de una sesión en Django y cómo usarla para almacenar datos del usuario.</p>
+        <ul>
+          <li>Creación de middleware personalizado.</li>
+          <li>Autenticación básica con el sistema de usuarios.</li>
+          <li>Autorización mediante decoradores y grupos.</li>
+          <li>Almacenamiento de datos persistentes por sesión.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section lab">
+      <h3>💻 Laboratorio 12: Sistema Web Backend</h3>
+      <p>Como parte del laboratorio se desarrolló una pequeña aplicación web backend en Django que incluyó:</p>
+      <ul>
+        <li>Un formulario para registrar productos con validación avanzada.</li>
+        <li>Panel de administración personalizado para gestionar los productos.</li>
+        <li>Uso de middleware para contar visitas al sitio.</li>
+        <li>Control de acceso con sesiones de usuario y autenticación.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 | Desarrollo Backend con Django - Semana 12
+  </footer>
+
+</body>
+</html>
+

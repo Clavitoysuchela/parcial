@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 16 - Evaluación Final</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #334155;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-top: 40px;
+      border-left: 5px solid #93c5fd;
+      padding-left: 10px;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .info-box {
+      background-color: #f3f4f6;
+      padding: 15px;
+      border-left: 6px solid #60a5fa;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .table th, .table td {
+      border: 1px solid #d1d5db;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .table th {
+      background-color: #e0f2fe;
+      color: #1e3a8a;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 24px;
+      background-color: #2563eb;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      text-align: center;
+    }
+
+    .download-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>UNIVERSIDAD NACIONAL DEL CENTRO DEL PERÚ<br>
+    Facultad de Ingeniería de Sistemas</h1>
+  </header>
+
+  <main>
+    <h2>🧾 Evaluación Final – Semana 16</h2>
+
+    <div class="info-box">
+      <p><strong>Curso:</strong> Desarrollo de Aplicaciones Web</p>
+      <p><strong>Semestre:</strong> IX</p>
+      <p><strong>Fecha:</strong> _______________________</p>
+      <p><strong>Apellidos y Nombres:</strong> ____________________________________________</p>
+    </div>
+
+    <h2>🎯 Instrucciones</h2>
+    <p>Desarrolle el presente examen utilizando <strong>React</strong> y <strong>Python (Flask)</strong>. La duración es de 7 días. El proyecto debe ser realizado por equipos y entregado dentro del plazo indicado.</p>
+
+    <h2>📌 Objetivo</h2>
+    <p>Construir una aplicación web inteligente utilizando Python (Flask), MySQL, y un frontend moderno en HTML, CSS, JavaScript y React. El sistema debe ser funcional, seguro y tener una experiencia de usuario fluida.</p>
+
+    <h2>🧠 Backend (Flask + MySQL + IA)</h2>
+    <ul>
+      <li>Crear una API con las siguientes rutas:</li>
+      <ul>
+        <li><code>POST /register</code>: Registrar usuarios</li>
+        <li><code>POST /login</code>: Autenticación con JWT</li>
+        <li><code>POST /analyze-text</code>: Recibe texto y devuelve resultado del modelo IA</li>
+        <li><code>GET /profile</code>: Ruta protegida (requiere token)</li>
+      </ul>
+      <li>Dashboard para gestionar y mostrar resultados del modelo IA.</li>
+      <li>Integrar un modelo IA con:
+        <ul>
+          <li><strong>Opción A:</strong> Análisis de sentimientos</li>
+          <li><strong>Opción B:</strong> Resumen de texto</li>
+          <li><strong>Opción C:</strong> (Libre elección)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>🎨 Frontend (React + HTML/CSS/JS)</h2>
+    <ul>
+      <li>Componentes:
+        <ul>
+          <li>Formulario de registro e inicio de sesión</li>
+          <li>Área de análisis (textarea para ingresar texto)</li>
+          <li>Visualización de resultados de la IA</li>
+        </ul>
+      </li>
+      <li>Manejo de token en almacenamiento local</li>
+      <li>Diseño limpio, intuitivo y responsive</li>
+    </ul>
+
+    <h2>📊 Criterios de Evaluación</h2>
+
+    <table class="table">
+      <tr>
+        <th>Criterio</th>
+        <th>Ponderación</th>
+      </tr>
+      <tr>
+        <td>Autenticación y seguridad</td>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <td>Integración del modelo de IA</td>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <td>Fluidez entre frontend y backend</td>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <td>Experiencia de usuario y diseño</td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td>Código limpio y documentación</td>
+        <td>15%</td>
+      </tr>
+    </table>
+
+    <div style="text-align: center;">
+<a href="Proyectodeparciales/EVALUACION_FINAL.zip" download class="download-btn">
+  📦 Descargar Proyecto Final (.zip)
+</a>
+
+    </div>
+
+  </main>
+
+  <footer>
+    Mg. Ing. Jaime Suasnábar Terrel | Curso: Desarrollo de Aplicaciones Web
+  </footer>
+
+</body>
+</html>
+

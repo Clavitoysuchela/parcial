@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semana 4 - JavaScript, TypeScript y Canvas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #1f2937;
+    }
+
+    header {
+      background: #3b82f6;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2563eb;
+      border-left: 4px solid #60a5fa;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    canvas {
+      background: #e0f2fe;
+      border: 2px solid #3b82f6;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .code-block {
+      background: #f3f4f6;
+      border-left: 4px solid #3b82f6;
+      padding: 12px;
+      font-family: monospace;
+      white-space: pre;
+      margin: 10px 0;
+    }
+
+    .lab {
+      background: #fef3c7;
+      padding: 15px 20px;
+      border-left: 6px solid #f59e0b;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    .github-link {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .github-link a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #3b82f6;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .github-link a:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semana 4: JavaScript, TypeScript y Canvas</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>📜 Fundamentos de JavaScript</h2>
+      <p>JavaScript es un lenguaje esencial en el desarrollo frontend. Esta semana exploramos sus estructuras principales, manipulación del DOM y su uso para crear interactividad dinámica.</p>
+      <ul>
+        <li>Variables, funciones y control de flujo.</li>
+        <li>Manipulación del DOM.</li>
+        <li>Eventos y animaciones.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧱 Introducción a TypeScript</h2>
+      <p>TypeScript es un superset de JavaScript que permite trabajar con tipos estáticos y clases modernas, facilitando la escalabilidad en proyectos grandes.</p>
+      <ul>
+        <li>Compilación de <code>.ts</code> a <code>.js</code>.</li>
+        <li>Definición de tipos y clases.</li>
+        <li>Interfaces y tipado de funciones.</li>
+      </ul>
+      <div class="code-block">
+        interface Usuario &#123;<br>
+        &nbsp;&nbsp;nombre: string;<br>
+        &nbsp;&nbsp;edad: number;<br>
+        &#125;
+      </div>
+    </section>
+
+    <section>
+      <h2>🎨 Canvas con JavaScript</h2>
+      <p>El elemento <code>&lt;canvas&gt;</code> permite dibujar directamente en el navegador. Usamos su API para crear gráficos dinámicos.</p>
+
+      <canvas id="myCanvas" width="300" height="150"></canvas>
+
+      <p style="text-align:center; font-style: italic;">⬆️ Ejemplo simple: dibujo con líneas y relleno</p>
+
+      <div class="code-block">
+        const canvas = document.getElementById("myCanvas");<br>
+        const ctx = canvas.getContext("2d");<br><br>
+        ctx.fillStyle = "#60a5fa";<br>
+        ctx.fillRect(20, 20, 100, 50);<br>
+        ctx.strokeStyle = "#1e40af";<br>
+        ctx.lineWidth = 4;<br>
+        ctx.strokeRect(20, 20, 100, 50);
+      </div>
+    </section>
+
+    <section class="lab">
+      <h2>🧪 Laboratorio 04A</h2>
+      <ul>
+        <li>Creación de una página que combine HTML, JS y un archivo `.ts` compilado.</li>
+        <li>Dibujo con canvas: rectángulos, círculos y textos.</li>
+        <li>Uso de eventos para modificar dinámicamente el canvas.</li>
+      </ul>
+    </section>
+
+    <section class="github-link">
+      <a href="https://github.com/Jh4ir1612/Semana4" target="_blank">
+        🔗 Ver código en GitHub
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 | Semana 4 - JavaScript, TypeScript y Canvas
+  </footer>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#60a5fa";
+    ctx.fillRect(20, 20, 100, 50);
+    ctx.strokeStyle = "#1e40af";
+    ctx.lineWidth = 4;
+    ctx.strokeRect(20, 20, 100, 50);
+  </script>
+
+</body>
+</html>
+
